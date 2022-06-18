@@ -74,7 +74,7 @@ const Navbar=()=>{
                 </Typography>
                 <MenuIcon sx={{display:{xs:"block",sm:"none"},color:"#03045E",cursor:"pointer"}} onClick={()=>{setIsOpen(prev=>!prev)}}/>
                 <Buttons sx={{display:{xs:"none",sm:"block"}}}>
-                    <Link to="aboutme" smooth duration={1000} offset={-100}>
+                    <Link to="aboutme" smooth duration={1000} offset={-90}>
                         <NavbarButton variant="text">PROFILE</NavbarButton>
                     </Link>
                     <Link to="blog" smooth duration={1000} offset={-100}>

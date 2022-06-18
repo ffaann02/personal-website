@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { AppBar, Button, Drawer, Grid, styled, Toolbar, Typography } from "@mui/material";
 import { Box, style } from "@mui/system";
 import { makeStyles } from '@mui/styles'
-import profileImg from "./images/profile.png"
+import profileImg from "./images/Untitled.png"
 const useStyles = makeStyles({
     container: {
         display: 'flex',
         marginLeft: "auto",
         marginRight: "auto",
         alignSelft: "center",
-        marginTop:"80px"
+        marginTop:"70px"
     },
     profileImg:{
         width:"100%",
