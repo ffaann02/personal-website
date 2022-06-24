@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Button, Drawer, Grid, styled, Toolbar, Typography } from "@mui/material";
 import { Box, style } from "@mui/system";
 import { makeStyles } from '@mui/styles'
-import profileImg from "./images/Untitled.png"
+import profileImg from "./images/github profile (2).jpg"
 const useStyles = makeStyles({
     container: {
         display: 'flex',
