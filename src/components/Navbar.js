@@ -16,10 +16,13 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import CallIcon from '@mui/icons-material/Call';
 import CloseIcon from '@mui/icons-material/Close';
 import Divider from '@mui/material/Divider';
+import imageSidebarMobile from "./images/people-group.png"
 const useStyles = makeStyles({
     box:{
-        backgroundColor:"black",
+        background:"linear-gradient(to bottom, #ffffff 0%, #bde6f1 100%)",
         width:"80%",
+    },imageSidebarMobile:{
+      width:"100%"
     }
 })
 const StyledToolbar = styled(Toolbar)({
@@ -131,8 +134,11 @@ const Navbar=()=>{
           </Link>
         </List>
         <Box sx={{position:"absolute",right:"10px",top:"10px"}} onClick={()=>{setIsOpen(false)}}>
-            <CloseIcon sx={{fontSize:"30px",color:"red"}}/>
+            <CloseIcon sx={{fontSize:"30px",color:"red",cursor:'pointer'}}/>
         </Box>
+        <Box sx={{width:"100%",position:"absolute",bottom:"0"}}>
+                  <img  src={imageSidebarMobile} className={classes.imageSidebarMobile} />
+                </Box>
         </Drawer>
         {buttonVisible?
         <Box sx={{display:{lg:"block",md:"block",sm:"none",xs:"none"},backgroundColor:"red",position:"fixed",borderRadius:"6px",backgroundColor:"#CAF0F8",cursor:"pointer"
