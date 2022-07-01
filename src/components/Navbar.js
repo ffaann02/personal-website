@@ -42,7 +42,7 @@ const NavbarButton = styled(Button)(({theme})=>({
     borderRadius:"8px",
     "&:hover":{
         backgroundColor:"rgba(202, 240, 248,0.4)"
-    }
+    },
 }));
 
 const Navbar=()=>{
@@ -94,9 +94,9 @@ const Navbar=()=>{
         <List>
           <Link to="heroblock" onClick={()=>{setIsOpen(false)}} smooth duration={1000} offset={-100}>
           <ListItem disablePadding sx={{margin:"10px 0 10px 0"}}>
-            <ListItemButton>
+            <ListItemButton sx={{"&:hover #iconButtonSidebar":{color:"#03045E"}}}>
               <ListItemIcon>
-                <HomeIcon />
+                <HomeIcon id="iconButtonSidebar"/>
               </ListItemIcon>
               <Typography variant="h6" sx={{fontSize:"20px"}}>HOME</Typography>
             </ListItemButton>
@@ -104,9 +104,9 @@ const Navbar=()=>{
           </Link>
           <Link to="aboutme" onClick={()=>{setIsOpen(false)}} smooth duration={1000} offset={-100}>
           <ListItem disablePadding sx={{margin:"10px 0 10px 0"}} >
-            <ListItemButton>
+            <ListItemButton sx={{"&:hover #iconButtonSidebar":{color:"#03045E"}}}>
               <ListItemIcon>
-                <ArticleIcon />
+                <ArticleIcon id="iconButtonSidebar"/>
               </ListItemIcon>
               <Typography variant="h6" sx={{fontSize:"20px"}}>PROFILE</Typography>
             </ListItemButton>
@@ -114,9 +114,9 @@ const Navbar=()=>{
           </Link>
           <Link to="blog" onClick={()=>{setIsOpen(false)}} smooth duration={1000} offset={-100}>
           <ListItem disablePadding sx={{margin:"10px 0 10px 0"}}>
-            <ListItemButton>
+            <ListItemButton sx={{"&:hover #iconButtonSidebar":{color:"#03045E"}}}>
               <ListItemIcon>
-                <AccountCircleIcon />
+                <AccountCircleIcon id="iconButtonSidebar"/>
               </ListItemIcon>
               <Typography variant="h6" sx={{fontSize:"20px"}}>BLOG</Typography>
             </ListItemButton>
@@ -124,9 +124,9 @@ const Navbar=()=>{
           </Link>
           <Link to="contact" onClick={()=>{setIsOpen(false)}} smooth duration={1000} offset={-100}>
           <ListItem disablePadding sx={{margin:"10px 0 10px 0"}}>
-            <ListItemButton>
+            <ListItemButton sx={{"&:hover #iconButtonSidebar":{color:"#03045E"}}}>
               <ListItemIcon>
-                <CallIcon />
+                <CallIcon id="iconButtonSidebar"/>
               </ListItemIcon>
               <Typography variant="h6" sx={{fontSize:"20px"}}>CONTACT</Typography>
             </ListItemButton>
