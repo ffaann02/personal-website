@@ -23,7 +23,7 @@ function App() {
             <AboutMe />
             <Blog />
             <Contact />
-            <Portfolio/>
+            {/* <Portfolio/> */}
             </div>
           }>
           </Route>
